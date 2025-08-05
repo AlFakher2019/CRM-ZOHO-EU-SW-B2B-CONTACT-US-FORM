@@ -5,6 +5,7 @@
     <link href="css/form.css" rel="stylesheet" type="text/css" />
     <link href="https://db.onlinewebfonts.com/c/2a61d83e6af5b73f8f7751643f767325?family=GreycliffCF-DemiBold" rel="stylesheet">
     <script src="js/validation.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="zf-backgroundBg">
     <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
@@ -37,47 +38,14 @@
           <ul class="zf-tempHeadBdr">
             <li class="zf-tempHeadContBdr">
               <h2 class="zf-frmTitle">
-                <em>Contact Us</em>
+                <!-- <em>Contact Us</em> -->
               </h2>
               <p class="zf-frmDesc"></p>
               <div class="zf-clearBoth"></div>
             </li>
           </ul>
           <div class="top-section">
-            <div class="wrapper">
-              <div class="box">
-                <div>
-                  <span>Email</span>
-                  <p>support@us.ooka.com</p>
-                </div>
-                <button>Send us an email</button>
-              </div>
-              <div class="box">
-                <div>
-                  <span>Live Chat</span>
-                  <p>Monday to Friday <br />9:30 AM - 6:00 PM EST</p>
-                </div>
-                <button class="live-chat-button">Live Chat</button>
-              </div>
-            </div>
-
-            <div class="wrapper">
-              <div class="box">
-                <div>
-                  <span>Phone</span>
-                  <p>
-                    For immediate assistance, give us a call<br /> at: 1-888-866-5232
-                  </p>
-                  <p>Monday to Friday <br />9:30 AM - 6:00 PM EST</p>
-                </div>
-              </div>
-              <div class="box">
-                <div>
-                  <span>Address</span>
-                  <p>3525 Whitehall Park Drive <br />Suite 300 <br />Charlotte, NC 28273</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
           <div class="zf-subContWrap zf-topAlign">
             <ul>
@@ -217,17 +185,81 @@
                         <em class="zf-important"> *</em>
                       </label>
                       <div class="zf-tempContDiv">
-                        <select
-                          class="zf-form-sBox"
-                          name="Dropdown"
-                          checktype="c1"
-                        >
-                          <option selected="true" value="-Select-">
-                            -Select-
-                          </option>
-                          <option value="First Choice">First Choice</option>
-                          <option value="Second Choice">Second Choice</option>
-                          <option value="Third Choice">Third Choice</option>
+                        <select class="zf-form-sBox" name="Dropdown" checktype="c1">
+                          <option selected="true" value="-Select-">-Select-</option>
+                          <optgroup label="Account Information">
+                            <option value="Update Account Inforamtion">Update Account
+                              Inforamtion</option>
+                            <option value="Forgot Password">Forgot Password</option>
+                            <option value="Other Login Issue">Other Login Issue</option>
+                          </optgroup>
+                          <optgroup label="Cancel / Modify Existing Order">
+                            <option value="Order Cancellation request">Order Cancellation
+                              request</option>
+                            <option value="Modify Order Request">Modify Order Request</option>
+                            <option value="Modify Address Request">Modify Address Request
+                            </option>
+                            <option value="Modify Shipping Method Request">Modify Shipping
+                              Method Request</option>
+                          </optgroup>
+                          <optgroup label="International Inquiry">
+                            <option value="International Returns">International Returns</option>
+                            <option value="International Refused Package">International Refused
+                              Package</option>
+                            <option value="International Shipping">International Shipping
+                            </option>
+                            <option value="Other">Other</option>
+                          </optgroup>
+                          <optgroup label="Order Issue">
+                            <option value="Defective Item">Defective Item</option>
+                            <option value="Missing Item">Missing Item</option>
+                            <option value="Wrong Item">Wrong Item</option>
+                            <option value="Payment Issue">Payment Issue</option>
+                            <option value="Product Assembly">Product Assembly</option>
+                            <option value="Damaged Item">Damaged Item</option>
+                            <option value="Lost Package">Lost Package</option>
+                            <option value="Other">Other</option>
+                          </optgroup>
+                          <optgroup label="Order Status">
+                            <option value="Order Status Inquiry">Order Status Inquiry</option>
+                            <option value="Tracking Information">Tracking Information</option>
+                          </optgroup>
+                          <optgroup label="Returns / Exchange Request">
+                            <option value="Domestic Return Request">Domestic Return Request
+                            </option>
+                            <option value="International Return Request">International Return
+                              Request</option>
+                          </optgroup>
+                          <optgroup label="Technical Support">
+                            <option value="Login Issue">Login Issue</option>
+                            <option value="Payment Issue">Payment Issue</option>
+                            <option value="Promo Code Issue">Promo Code Issue</option>
+                            <option value="Website Issue">Website Issue</option>
+                            <option value="Other">Other</option>
+                          </optgroup>
+                          <optgroup label="Wholesale Inquiry">
+                            <option value="Wholesale Account Information">Wholesale Account
+                              Information</option>
+                          </optgroup>
+                          <optgroup label="General Inquiries">
+                            <option value="Product Assembly">Product Assembly</option>
+                            <option value="Affiliate Information Request">Affiliate Information
+                              Request</option>
+                            <option value="Marketing Inquiry">Marketing Inquiry</option>
+                            <option value="Product Request">Product Request</option>
+                            <option value="Vendor Inquiry">Vendor Inquiry</option>
+                            <option value="Other">Other</option>
+                          </optgroup>
+                          <optgroup label="Shipping and Delivery Options">
+                            <option value="Shipping Carrier Inquiry">Shipping Carrier Inquiry
+                            </option>
+                            <option value="Local Courier Delivery Options">Local Courier
+                              Delivery Options</option>
+                            <option value="Will Call Pickup Information">Will Call Pickup
+                              Information</option>
+                            <option value="Freight and Bulk Shipping Options">Freight and Bulk
+                              Shipping Options</option>
+                          </optgroup>
                         </select>
                         <p
                           id="Dropdown_error"
